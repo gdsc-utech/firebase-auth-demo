@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Login Demo</title>
+</head>
+<body>
+    <!-- make our site look a bit better -->
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            padding: 5px 20px;
+            background: rgb(43, 142, 255);
+            color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        input{
+            padding: 5px 10px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+    </style>
+
+    <div id="container">
+        <!-- the login section -->
+        <div>
+            <h1>Firebase Login</h1>
+
+            <label>Email:</label>
+            <br>
+            <input type="email" id="email-input">
+
+            <br>
+            <label>Password:</label>
+            <br>
+            <input type="password" id="pwd-input">
+            
+            <br><br>
+            <button id="signup">Sign Up</button>
+            <button id="signin">Sign In</button>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- section to show once logged in. hidden by default -->
+        <div id="loggedin" style="display: none;">
+            <h2>User Logged In</h2>
+            <button id="signout">Logout</button>
+        </div>
+    </div>
+
+    <!-- include our javascript code -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
